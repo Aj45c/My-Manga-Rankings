@@ -8,5 +8,5 @@
 - Mongodb
 
 # Next Steps
-*Make it so i have a suggestion box instead of pushing to the end of list
-*Make suggestions have pictures using API
+* Make it so i have a suggestion box instead of pushing to the end of list
+* Make suggestions have pictures using API
