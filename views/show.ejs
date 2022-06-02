@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Managa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css" />
+<style>
+    body{
+        background-color:black;
+        color: white;
+        display: flex;
+        max-width: 500px;
+        margin: 0 auto;
+        align-items: flex-start;
+        font-family: 'Concert One', cursive;;
+    }
+    #pic {
+        border-radius: 5px;
+        border: 2px solid white;
+        size: 13px;
+    }
+
+</style>
+</head>
+<body>
+
+<div container>
+    <h1><%= theManga.name %></h1>
+    <img id = "pic" src = "<%= theManga.img%>"height='450' width='auto'/>
+    <ul>
+        <li>Mangka: <%= theManga.Arthur %></li>
+        <li>Genre: <%=theManga.Genre%></li>
+        <li>Demographic: <%= theManga.Demographic %></li>
+        <li>Number of Volumes: <%= theManga.Volumes %></li>
+        <li>Rating: <%= theManga.Rating %></li>
+    </ul>
+
+        <form action = "/manga">
+            <button>Go Back</button>
+        </form>
+</div>
+
+</body>
+</html>

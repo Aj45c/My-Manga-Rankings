@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css" />
+    <style>
+        h1 {
+            color:whitesmoke;
+        }
+        body{
+            font-family: 'Concert One', cursive;
+            background-color: black;
+        }
+        #pics:hover{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Favorite Manga</h1>
+    <form action ="/manga/new">
+        <button>Add A Reading Suggestion!</button>
+    </form>
+
+    <div class="container">
+    <% for(let i=0; i < allManga.length; i++){ %>
+        <a href="/manga/<%= i %>">
+            <img id ="pics" src="<%=allManga[i].img%>" height='260' width='auto' />
+        </a>
+        <% } %>
+    </div>
+</body>
+</html>
