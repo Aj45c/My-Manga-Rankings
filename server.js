@@ -48,7 +48,7 @@ app.post("/manga" , (req, res) =>{
         Name: req.body.Name,
         Arthur: req.body.Arthur,
         Genre: req.body.Genre,
-        img: "https://i.imgur.com/ZahwJjN.gif",
+        img: "https://i.imgur.com/C8ApYJV.jpg",
         Demographic: req.body.Demographic,
         Volumes: req.body.Volumes,
     }
@@ -61,7 +61,6 @@ app.post("/manga" , (req, res) =>{
 app.get('/Manga/:index/edit', (req, res) =>{
     res.render('edit.ejs',{
         manga: Mangas[req.params.index],
-        Name: req.params.Name
     })
 })
 

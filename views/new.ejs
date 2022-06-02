@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Suggestion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css" />
+</head>
+<style>
+    body{
+    background-color: black;
+    font-family: 'Concert One', cursive;
+    color: white;
+    max-width: 500px;
+    margin: 0 auto;
+}
+</style>
+<body>
+    <h1>Add New Suggestion</h1>
+    <form action="/manga" method="POST">
+        <input type="text" name="Name" placeholder="Manga Title"><br/>
+        <input type="text" name="Arthur" placeholder="Mangaka"><br/>
+        <input type="text" name="Genre" placeholder="Genre"><br/>
+        <input type="text" name="Demographic" placeholder="Demographic"><br/>
+        <input type="number" name="Volumes" placeholder="Number of Volumes"><br/>
+        <input type="submit" value="Add Entry" />
+    </form>
+</body>
+
+</html>
