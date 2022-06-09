@@ -5,7 +5,7 @@
 This application allows the user to see how I rank the manga I have read and the app also allows the user to add a suggestion that I can then read!. I'm a big manga reader and so enhancing this app is definitely a goal. I'm also interested to see what people reccommend!
 
 # Getting Started
-[Here the app! Enjoy! ](https://my-manga-rankings.herokuapp.com/)
+[Here the app! Enjoy! ](https://my-manga-rankings.herokuapp.com/manga)
 
 # Technologies I used
 - HTML
